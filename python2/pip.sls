@@ -1,6 +1,6 @@
+{% from "python2/map.jinja" import python2 with context %}
+
 python2-pip:
   pkg:
     - installed
-    {% if grains['os_family'] in ['Debian', 'RedHat'] %}
-    - name: python-pip
-    {% endif %}
+    - name: {{ python2.pip_pkg }}

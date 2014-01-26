@@ -1,19 +1,25 @@
+=======
 python2
 =======
 
-Used to install and manage python2 and related libraries
+Used to install and manage python2 and related libraries.
 
-python2
--------
+.. note::
 
-Install python2
+    See the full `Salt Formulas installation and usage instructions
+    <http://docs.saltstack.com/topics/conventions/formulas.html>`_.
 
-python2.pip
+``python2``
 -----------
 
-Install python2 pip
+Install the Python2 package.
 
-python2.mako
-------------
+``python2.pip``
+---------------
 
-Install python2 mako
+Install the pip package for Python2.
+
+``python2.mako``
+----------------
+
+Install the mako package for Python2.

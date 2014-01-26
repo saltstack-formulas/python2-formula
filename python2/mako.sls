@@ -1,6 +1,6 @@
+{% from "python2/map.jinja" import python2 with context %}
+
 python2-mako:
   pkg:
     - installed
-    {% if grains['os_family'] in ['Debian', 'RedHat'] %}
-    - name: python-mako
-    {% endif %}
+    - name: {{ python2.mako_pkg }}
