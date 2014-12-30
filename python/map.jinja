@@ -1,0 +1,25 @@
+{% set python2 = salt['grains.filter_by']({
+    'Debian': {
+        'pkg': 'python',
+        'mako_pkg': 'python-mako',
+        'pip_pkg': 'python-pip',
+    },
+    'RedHat': {
+        'pkg': 'python',
+        'mako_pkg': 'python-mako',
+        'pip_pkg': 'python-pip',
+    },
+}, merge=salt['pillar.get']('python2:lookup')) %}
+
+{% set python3 = salt['grains.filter_by']({
+    'Debian': {
+        'pkg': 'python3',
+        'mako_pkg': 'python3-mako',
+        'pip_pkg': 'python3-pip',
+    },
+    'RedHat': {
+        'pkg': 'python3',
+        'mako_pkg': 'python3-mako',
+        'pip_pkg': 'python3-pip',
+    },
+}, merge=salt['pillar.get']('python3:lookup')) %}
