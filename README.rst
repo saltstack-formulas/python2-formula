@@ -1,8 +1,8 @@
 =======
-python2
+python
 =======
 
-Used to install and manage python2 and related libraries.
+Used to install and manage python2 and/or python3 and related libraries.
 
 .. note::
 
@@ -15,17 +15,32 @@ Available states
 .. contents::
     :local:
 
-``python2``
+``python.python``
 -----------
 
 Install the Python2 package.
 
-``python2.pip``
+``python.pip``
 ---------------
 
 Install the pip package for Python2.
 
-``python2.mako``
+``python.mako``
 ----------------
 
 Install the mako package for Python2.
+
+``python.python3``
+-----------
+
+Install the Python3 package.
+
+``python.pip3``
+---------------
+
+Install the pip package for Python3.
+
+``python.mako3``
+----------------
+
+Install the mako package for Python3.
