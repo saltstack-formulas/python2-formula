@@ -4,12 +4,14 @@
         'dev_pkg': 'python-dev',
         'mako_pkg': 'python-mako',
         'pip_pkg': 'python-pip',
+        'm2c_pkg': 'python-m2crypto',
     },
     'RedHat': {
         'pkg': 'python',
         'dev_pkg': 'python-devel',
         'mako_pkg': 'python-mako',
         'pip_pkg': 'python-pip',
+        'm2c_pkg': 'python-m2ext',
     },
 }, merge=salt['pillar.get']('python2:lookup')) %}
 
