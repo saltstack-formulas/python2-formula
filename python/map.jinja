@@ -16,16 +16,15 @@
 }, merge=salt['pillar.get']('python2:lookup'), base='default') %}
 
 {% set python3 = salt['grains.filter_by']({
-    'Debian': {
+    'default': {
         'pkg': 'python3',
-        'dev_pkg': 'python3-dev',
-        'mako_pkg': 'python3-mako',
         'pip_pkg': 'python3-pip',
+        'mako_pkg': 'python3-mako',
+    },
+    'Debian': {
+        'dev_pkg': 'python3-dev',
     },
     'RedHat': {
-        'pkg': 'python3',
         'dev_pkg': 'python3-devel',
-        'mako_pkg': 'python3-mako',
-        'pip_pkg': 'python3-pip',
     },
-}, merge=salt['pillar.get']('python3:lookup')) %}
+}, merge=salt['pillar.get']('python3:lookup'), base='default') %}
